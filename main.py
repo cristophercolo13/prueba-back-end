@@ -16,7 +16,7 @@ def registrar_Tv():
     precio = float(input("ingrese precio:  "))
     eficiencia = input("ingrese eficiencia:  ")
     marca = input("ingrese marca:  ")
-    nConsola = input("ingrese:  ")
+    nConsola = input("ingrese ncosola:  ")
     version = input("ingrese version:  ")
     tamaño = float(input("ingrese tamaño:  "))
     tele = Tv(voltage,precio,eficiencia,marca,nConsola,version,tamaño)
