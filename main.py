@@ -5,6 +5,7 @@ from Scooter import Scooter
 from Tv import Tv
 
 
+
 lista_Tv= []
 lista_Consolas=[]
 lista_Scooters= []
@@ -19,7 +20,7 @@ def registrar_Tv():
     version = input("ingrese version:  ")
     tamaño = float(input("ingrese tamaño:  "))
     tele = Tv(voltage,precio,eficiencia,marca,nConsola,version,tamaño)
-    lista_Tv.append(tele)
+    lista_Tv.append(voltage)
 
 def registrar_Consola():
     voltage = int(input("ingrese voltage:  "))
@@ -46,7 +47,7 @@ def registrar_Bicicleta():
     aro = float(input("ingrese aro:  "))
     peso = float(input("ingrese peso:  "))
     precio = float(input("ingrese precio:  "))
-    marca = input("ingrese marca:  ")
+    marca = str(input("ingrese marca:  "))
     Bicicleta = Bicicleta(aro,peso,precio,marca)
     lista_Bicicletas.append(Bicicleta)
 
@@ -66,6 +67,15 @@ while True:
         registrar_Bicicleta()
     else:
         print("por favor ingrese una opcion que sea validad ")
+    
+    def cotizacion_tv():
+        pass
+    def cotizacion_consola():
+        pass
+    def cotizacion_scooter():
+        pass
+    def cotizacion_bici():
+        pass
 
 
   
