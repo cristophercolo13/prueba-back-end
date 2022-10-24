@@ -23,4 +23,4 @@ class Scooter(Tecnologia,Transporte):
         return self.__peso
     def set__peso(self,peso):
         self.__peso  = peso
-    
+    #sadaddada
