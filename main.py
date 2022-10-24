@@ -8,7 +8,7 @@ from Tv import Tv
 lista_Tv= []
 lista_Consolas=[]
 lista_Scooters= []
-lista_Bicicleta=[] 
+lista_Bicicletas=[] 
 
 def registrar_Tv():
     voltage = int(input("ingrese voltage:  "))
@@ -48,7 +48,7 @@ def registrar_Bicicleta():
     precio = float(input("ingrese precio:  "))
     marca = input("ingrese marca:  ")
     Bicicleta = Bicicleta(aro,peso,precio,marca)
-    lista_Bicicleta.append(Bicicleta)
+    lista_Bicicletas.append(Bicicleta)
 
 while True:
     print("1.-registrar Tv: ")
