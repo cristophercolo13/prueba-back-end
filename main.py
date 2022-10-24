@@ -1,13 +1,14 @@
+from Tecnologia import Tecnologia
 from Bicicleta import Bicicleta
 from Consola import Consola
 from Scooter import Scooter
 from Tv import Tv
 
 
-lista_tv= []
-lista_consolas=[]
-lista_scooters= []
-lista_bicicleta=[] 
+lista_Tv= []
+lista_Consolas=[]
+lista_Scooters= []
+lista_Bicicleta=[] 
 
 def registrar_Tv():
     voltage = int(input("ingrese voltage:  "))
@@ -18,7 +19,7 @@ def registrar_Tv():
     version = input("ingrese version:  ")
     tamaño = float(input("ingrese tamaño:  "))
     tele = Tv(voltage,precio,eficiencia,marca,nConsola,version,tamaño)
-    lista_tv.append(tele)
+    lista_Tv.append(tele)
 
 def registrar_Consola():
     voltage = int(input("ingrese voltage:  "))
@@ -28,7 +29,7 @@ def registrar_Consola():
     nConsola = input("ingrese numero de consola:  ")
     version = input("ingrese version:  ")
     Consola = Consola(voltage,precio,eficiencia,marca,nConsola,version)
-    lista_consolas.append(Consola)
+    lista_Consolas.append(Consola)
 
 def registrar_Scooter():
     aro = float(input("ingrese aro:  "))
@@ -39,7 +40,7 @@ def registrar_Scooter():
     eficiencia = input("ingrese eficiencia:  ")
     marca = str(input("ingrese marca:  "))
     Scooter = Scooter(aro,velocidad,peso,voltage,precio,eficiencia,marca)
-    lista_consolas.append(Scooter)
+    lista_Scooters.append(Scooter)
 
 def registrar_Bicicleta():
     aro = float(input("ingrese aro:  "))
@@ -47,7 +48,7 @@ def registrar_Bicicleta():
     precio = float(input("ingrese precio:  "))
     marca = input("ingrese marca:  ")
     Bicicleta = Bicicleta(aro,peso,precio,marca)
-    lista_bicicleta.append(Bicicleta)
+    lista_Bicicleta.append(Bicicleta)
 
 while True:
     print("1.-registrar Tv: ")
