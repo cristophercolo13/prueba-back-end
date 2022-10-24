@@ -31,19 +31,19 @@ def registrar_Consola():
     lista_consolas.append(Consola)
 
 def registrar_Scooter():
-    aro = float(input("ingrese precio:  "))
+    aro = float(input("ingrese aro:  "))
     velocidad = int(input("ingrese su velocidad: "))
-    peso = float(input("ingrese precio:  "))
+    peso = float(input("ingrese peso:  "))
     voltage = int(input("ingrese voltage:  "))
     precio = float(input("ingrese precio:  "))
     eficiencia = input("ingrese eficiencia:  ")
-    marca = input("ingrese marca:  ")
+    marca = str(input("ingrese marca:  "))
     Scooter = Scooter(aro,velocidad,peso,voltage,precio,eficiencia,marca)
     lista_consolas.append(Scooter)
 
 def registrar_Bicicleta():
-    aro = float(input("ingrese precio:  "))
-    peso = float(input("ingrese precio:  "))
+    aro = float(input("ingrese aro:  "))
+    peso = float(input("ingrese peso:  "))
     precio = float(input("ingrese precio:  "))
     marca = input("ingrese marca:  ")
     Bicicleta = Bicicleta(aro,peso,precio,marca)
@@ -61,7 +61,7 @@ while True:
         registrar_Consola()
     elif opcion=="3":
         registrar_Scooter()
-    elif opcion=="3":
+    elif opcion=="4":
         registrar_Bicicleta()
     else:
         print("por favor ingrese una opcion que sea validad ")
